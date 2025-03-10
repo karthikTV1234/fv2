@@ -1,0 +1,33 @@
+ListItemWidget:
+Step1: Create a Stateless Widget
+  StatelessWidget is used because the list item does not change dynamically.
+  If the item needed to change (e.g., checkbox selection), we would use StatefulWidget.
+
+Step2: Define Constructor with Required Parameters
+
+
+Step3: Build Method (Returns UI)
+   build(BuildContext context) → The main method that defines what this widget will look like.
+
+
+Step4: Create a List Item with ListTile
+    Add an Icon Using leading
+    Define the Title and Subtitle
+    Add a Right-Side Icon (trailing -> Displays an icon at the end of the list item)
+    Handle Tap Actions
+
+
+ListScreen:
+Step1: Define the ListScreen Class with Stateless Widget
+     ListScreen is a Stateless Widget because the list is fixed and does not change.
+Step2: Create a Sample List of Items
+Step3: Define a Function for Handling Taps
+      _onItemTap is called when an item is tapped.
+Step4: Implement the build Method
+     build(BuildContext context) is the method that defines the UI for ListScreen.
+Step5: Create the Scaffold Structure
+     Create a Scrollable List Using ListView.builder
+         itemCount: items.length → Tells how many items to display.
+         itemBuilder → A function that builds each item dynamically.
+     Return a Custom List Item Widget
+    

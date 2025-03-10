@@ -1,0 +1,23 @@
+https://medium.com/@hemantkumarceo001/day-18-step-by-step-guide-to-listview-in-flutter-for-noted-app-061ab5083a84
+
+Types of ListView 🛠️
+ListView: A straightforward list of items.
+ListView.builder: Creates items on demand to improve performance for large lists.
+ListView.separated: Similar to ListView.builder, but with separators between items.
+ListView.custom: Allows for more customization by using a SliverChildDelegate.
+
+
+ListView:
+When to use:
+1. when you have a small number of items.
+2. It constructs all children at once, which can be inefficient for long lists.
+
+ListView.builder:
+ListView.builder is perfect for long lists where items are created on demand. It takes two parameters: itemCount and itemBuilder.
+
+itemCount: The number of items in the list.
+itemBuilder: A function that returns a widget for each item in the list.
+
+
+ListView.separated:
+This type of ListView is similar to ListView.builder but allows you to add separators between items.

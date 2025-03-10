@@ -1,0 +1,10 @@
+✅ Use PagedListView (infinite_scroll_pagination) → Best for real-world apps.
+❌ Avoid PaginatedListView (paginated_listview) → Less flexible & less support.
+
+📌 Comes from infinite_scroll_pagination package. Developed by the Flutter team
+📌 Handles pagination efficiently & automatically.
+📌 Best choice for production apps due to built-in optimizations.
+
+
+Adding the Dependency
+1. It is a third party package

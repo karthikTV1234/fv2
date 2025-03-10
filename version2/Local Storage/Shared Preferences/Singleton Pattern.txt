@@ -1,0 +1,6 @@
+Instead of calling await SharedPreferences.getInstance() multiple times in different methods, initialize it once and reuse the instance throughout your app.
+
+
+Step 1: Create a Helper Class (Singleton)
+Step 2: Initialize Once in main.dart
+Step 3: Use It Anywhere Without Reinitializing

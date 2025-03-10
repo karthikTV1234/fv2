@@ -1,0 +1,16 @@
+1️. User Interaction Triggers a State Change
+   Example: Button click increases a counter.
+
+2️. You Call setState()
+   Inside setState(), update the state variable.
+setState(() {
+  _counter++; // 🔼 Increase counter
+});
+3️. Flutter Marks the Widget as "Dirty"
+   This means: "This widget needs to be rebuilt!"
+
+4️. Flutter Schedules a UI Rebuild
+   The build() method runs again, updating only the changed parts.
+
+5️. New UI Appears
+   The screen refreshes instantly with the updated state.

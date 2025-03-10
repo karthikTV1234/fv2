@@ -1,0 +1,7 @@
+The shared_preferences plugin offers three distinct APIs for managing local storage in your Flutter applications
+1. SharedPreferences (Default API)
+2. SharedPreferencesAsync
+3. SharedPreferencesWithCache
+
+
+https://medium.com/@rishad2002/from-old-to-new-transform-your-flutter-storage-strategy-with-sharedpreferencesasync-and-15b500f40088

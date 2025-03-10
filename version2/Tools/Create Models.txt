@@ -1,0 +1,3 @@
+Converts JSON into model classes for Dart
+Using Quicktype:
+https://quicktype.io/

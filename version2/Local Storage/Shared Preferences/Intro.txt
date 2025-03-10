@@ -1,0 +1,29 @@
+https://medium.com/@manishkumar_75473/shared-preferences-in-flutter-a-complete-guide-ed70e34d37b6
+
+What is Shared Preferences?
+How to integrate it into a Flutter project
+Writing, reading, and deleting data
+Understanding how Shared Preferences works internally
+Limitations and best practices
+
+shared_preferences is a third-party package provided by the Flutter team but not built into Flutter by default.
+
+✅ Best for:
+✔ Storing user preferences (theme, language, login state)
+✔ Storing basic types (String, int, double, bool, List<String>)
+
+❌ Not suitable for:
+✖ Storing large data like images or structured objects
+✖ Storing sensitive data (use flutter_secure_storage instead)
+
+How SharedPreferences Works
+1️. Save Data → Store values using a unique key
+2️. Retrieve Data → Get saved values using the same key
+3️. Delete Data → Remove values if no longer needed
+
+🔹 Best Practices
+✅ Use async/await when initializing SharedPreferences(Always initialize SharedPreferences asynchronously)
+✅ Use await SharedPreferences.getInstance() only once and reuse the instance throughout your app.
+✅ Store only small, simple key-value pairs
+✅ Use meaningful keys (e.g., "isLoggedIn", "selectedTheme")
+❌ Don't use it for large data or complex objects or sensitive data.

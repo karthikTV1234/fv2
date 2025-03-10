@@ -1,0 +1,4 @@
+❌ When NOT to Use setState()
+App-wide state? ➝ Use Provider, Riverpod, or BLoC instead.
+Complex logic? ➝ setState() gets messy in large apps.
+Shared API data? ➝ Use BLoC or Riverpod if multiple screens need it.

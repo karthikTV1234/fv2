@@ -1,0 +1,12 @@
+Operations:
+1. Storing Data
+2. Retrieving Data
+3. Removing Data
+4. To clear all stored preferences
+
+
+Initialization: SharedPreferences.getInstance() retrieves the shared preferences instance, allowing you to access persistent storage.
+Storing Data: Use prefs.setString('key', 'value') to save a string value. For integers, doubles, and booleans, use setInt(), setDouble(), and setBool() respectively.
+Retrieving Data: Fetch stored data with prefs.getString('key'). Similarly, use getInt(), getDouble(), and getBool() for other types.
+Removing Data: Remove stored data using prefs.remove('key').
+Updating UI: The _loadSavedValue() method reloads data from shared preferences and updates the UI to reflect changes.

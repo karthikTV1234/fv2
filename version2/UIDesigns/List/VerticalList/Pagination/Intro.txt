@@ -1,0 +1,24 @@
+What is API Pagination?
+API pagination is a technique to fetch a limited set of data from a server instead of loading everything at once.
+The server provides data in chunks (pages).
+
+How Does It Work?
+Initially, the app fetches page 1 from the API.
+When the user scrolls to the end, the app requests page 2 and adds it to the list.
+This continues until there is no more data available.
+
+
+Flow Diagram:
+1️⃣ Load First Page (page=1)
+    ⬇
+2️⃣ User Scrolls to End
+    ⬇
+3️⃣ Call API for Next Page (page=2)
+    ⬇
+4️⃣ Show Loading Indicator (Progress Bar)
+    ⬇
+5️⃣ Append New Data to List
+    ⬇
+6️⃣ Hide Loading Indicator
+    ⬇
+7️⃣ Repeat Until No More Data
