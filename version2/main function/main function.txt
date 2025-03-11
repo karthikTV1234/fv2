@@ -1,0 +1,27 @@
+What is void main() in Flutter?
+1️. main() Function in Flutter
+   Every Flutter (and Dart) program starts execution from main().
+   It is the entry point of the application.
+2️. Syntax of main()
+void main() {
+  runApp(MyApp());
+}
+3️. Understanding runApp()
+   runApp() tells Flutter which widget to load first.
+   It takes a widget (usually MaterialApp, CupertinoApp, or any custom widget) and starts the app.
+   Example:
+   runApp(MyApp()); // MyApp is the root widget
+
+   ✅ What happens when runApp(MyApp()) is called?
+      Flutter initializes the widget tree and starts rendering.
+      The MyApp widget is created and inserted as the root of the widget tree.
+      The app's UI is built based on the widget tree.
+
+4. Two Ways to Write main()
+check image
+
+   When to Use Each Style?
+
+5. Can main() Be Asynchronous?
+Yes! If you need to do async setup (e.g., reading secure storage, initializing Firebase), use async in main().
+runApp(MyApp()) runs synchronously, even inside an async main function.

@@ -1,0 +1,23 @@
+In Flutter, @override void initState() is part of the StatefulWidget lifecycle and is used to initialize the state of a widget before it is built.
+
+
+1. It is called exactly once when the widget is inserted into the widget tree.
+
+
+Understanding the Code:
+@override
+void initState() {
+  super.initState(); // Always call super.initState() first
+}
+  1. @override: This annotation tells Dart that we are overriding a method from the parent State class.
+  2. void initState(): This function runs when the widget is created for the first time. You can use it to set things up before the screen appears.
+  3. super.initState();: This ensures that the base class (State) properly initializes the widget before adding custom logic.
+
+
+Why Use initState?
+initState is useful when:
+
+ Fetching data before the UI is built.
+ Setting up event listeners or controllers.
+ Initializing animations or database connections.
+ Using Future operations that should run only once.
